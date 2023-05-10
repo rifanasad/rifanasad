@@ -29,7 +29,7 @@ if [ "$first" != 1 ];then
 	cur=`pwd`
 	echo "Decompressing Rootfs, please be patient."
 	proot --link2symlink tar -xJf ${cur}/${tarball} --exclude='dev'||:
-	cd "$cur"
+	
 fi
 mv kali-${archurl} nethunter-fs
 rm nethunter-fs/etc/apt/sources.list
