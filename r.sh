@@ -277,7 +277,6 @@ function create_kex_launcher() {
     KEX_LAUNCHER=${CHROOT}/usr/bin/kex
     cat > $KEX_LAUNCHER <<- EOF
 #!/bin/bash
-cd \$(dirname \$0)
 pulseaudio --start
 ## For rooted user: pulseaudio --start --system
 ## unset LD_PRELOAD in case termux-exec is installed
